@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Marwadi Vyayamshala - Bhagalpur</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        :root {
+            --primary-orange: #FF7722;
+            --secondary-orange: #FF9955;
+            --light-orange: #FFF1E6;
+        }
+
+        .header {
+            background-color: var(--primary-orange);
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            color: white;
+        }
+
+        .nav {
+            background-color: white;
+            padding: 1rem;
+            border-bottom: 2px solid var(--primary-orange);
+        }
+
+        .nav a {
+            color: var(--primary-orange);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            color: var(--secondary-orange);
+        }
+
+        .hero {
+            height: 400px;
+            background: linear-gradient(rgba(255,119,34,0.7), rgba(255,119,34,0.7)), url('/api/placeholder/1200/400');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-orange);
+        }
+
+        .facilities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .facility-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .facility-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .facility-card h3 {
+            color: var(--primary-orange);
+            margin-bottom: 0.5rem;
+        }
+
+        .facility-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            background-color: var(--light-orange);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .spiritual-activities {
+            background-color: var(--light-orange);
+            text-align: center;
+        }
+
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .activity-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .contact {
+            background-color: white;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: var(--primary-orange);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>श्री मारवाड़ी व्यायामशाला</h1>
+        <p>Shree Marwadi Vyayamshala</p>
+    </header>
+
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#spiritual">Spiritual Activities</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero" id="home">
+        <div>
+            <h1>Welcome to Shree Marwadi Vyayamshala</h1>
+            <p>Your complete wellness destination in Bhagalpur</p>
+        </div>
+    </div>
+
+    <section class="section" id="facilities">
+        <h2>Our Facilities</h2>
+        <div class="facilities">
+            <div class="facility-card">
+                <img src="/api/placeholder/400/300" alt="Gym">
+                <h3>Modern Gym</h3>
+                <p>Fully equipped gym with professional trainers</p>
+            </div>
+            <div class="facility-card">
+                <img src="/api/placeholder/400/300" alt="Yoga">
+                <h3>Yoga Classes</h3>
+                <p>Following Bihar School of Yoga methodology</p>
+            </div>
+            <div class="facility-card">
+                <img src="/api/placeholder/400/300" alt="Table Tennis">
+                <h3>Table Tennis</h3>
+                <p>Professional table tennis facilities</p>
+            </div>
+            <div class="facility-card">
+                <img src="/api/placeholder/400/300" alt="Badminton">
+                <h3>Badminton Court</h3>
+                <p>Open badminton court for members</p>
+            </div>
+            <div class="facility-card">
+                <img src="/api/placeholder/400/300" alt="Mallakhamb">
+                <h3>Mallakhamb</h3>
+                <p>Traditional Indian gymnastics training</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section spiritual-activities" id="spiritual">
+        <h2>Weekly Spiritual Activities</h2>
+        <div class="activity-grid">
+            <div class="activity-card">
+                <h3>Saturday</h3>
+                <img src="/api/placeholder/400/300" alt="Yagna Puja">
+                <p>Yagna Puja and Bhajan Kirtan</p>
+                <p>Join us for spiritual enlightenment through sacred fire ceremony and devotional singing</p>
+            </div>
+            <div class="activity-card">
+                <h3>Sunday</h3>
+                <img src="/api/placeholder/400/300" alt="Sundar Kand">
+                <p>Sundar Kaand Chanting</p>
+                <p>Weekly recitation of Sundar Kaand from Ramcharitmanas</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section about" id="about">
+        <h2>About Us</h2>
+        <p>Shree Marwadi Vyayamshala, established and managed by a trusted organization, has been serving the community of Bhagalpur for many years. Our mission is to promote physical fitness, mental well-being, and traditional Indian sports among the residents of Bhagalpur.</p>
+        <br>
+        <p>We take pride in offering a comprehensive range of fitness facilities including a modern gym, yoga classes, table tennis, badminton, and mallakhamb. Our dedicated team of trained professionals ensures that members receive proper guidance and support in their fitness journey.</p>
+        <br>
+        <p>Our yoga classes are conducted following the authentic methodology and teachings of the prestigious Bihar School of Yoga, Munger. This ensures that our members receive genuine yogic education rooted in traditional practices while incorporating modern understanding of health and wellness.</p>
+    </section>
+
+    <section class="section contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: Bhagalpur, Bihar, India</p>
+        <p>Email: contact@marwadivyayamshala.com</p>
+        <p>Phone: +91 XXXXXXXXXX</p>
+        <br>
+        <h3>Membership Details</h3>
+        <p>Monthly membership available for all facilities</p>
+        <p>Special rates for students and senior citizens</p>
+        <p>Visit us for more information about membership plans</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Shree Marwadi Vyayamshala. All rights reserved.</p>
+    </footer>
+</body>
+</html>
